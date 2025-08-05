@@ -10,7 +10,7 @@ According to GOF, the Composite Design Pattern falls under Structural Design Pat
 
 According to GOF definition,
 ```text
-Compose objects into tree structure to represent part-whole hierarchies. Composite lets client treat individual objects and compositions of objects uniformly
+Compose objects into tree structure to represent part-whole hierarchies. Composite lets client treat individual objects and compositions of objects uniformly  
 ```
 
 ## When to Use
