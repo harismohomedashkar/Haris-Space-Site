@@ -79,7 +79,7 @@ weight: 100
 
 
 
-# Haris's Notes 📜
+# Haris Space 🚀
 
 ---
 <!-- 
@@ -102,7 +102,7 @@ weight: 100
 
 --- -->
 
-Welcome to **Haris's Notes** — a technical blog where I share solutions, patterns, and practical knowledge I actively gather through my work as a Computer Science Engineer.
+Welcome to **Haris Space 🚀** — a technical blog where I share solutions, patterns, and practical knowledge I actively gather through my work as a Computer Science Engineer.
 
 This blog is a reflection of my continuous learning journey, where I document useful insights that help not only me but others like you.
 
