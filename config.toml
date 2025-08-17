@@ -1,7 +1,7 @@
 googleAnalytics = "G-92Z0K9S64H"
 baseURL = "https://hariss-notes.mashkarharis.online/"
 languageCode = "en-us"
-title = "Haris Space 🚀"
+title = "Haris Space"
 theme = "hugo-book"
 params.BookTheme = "light"
 googlefonts = ["Droid Sans", "Fira Mono"]
