@@ -79,7 +79,7 @@ weight: 100
 
 
 
-# Haris Space 🚀
+# Haris Space
 
 ---
 <!-- 
@@ -102,29 +102,29 @@ weight: 100
 
 --- -->
 
-Welcome to **Haris Space 🚀** — a technical blog where I share solutions, patterns, and practical knowledge I actively gather through my work as a Computer Science Engineer.
+Welcome to **Haris Space** — a technical blog where I share solutions, patterns, and practical knowledge I actively gather through my work as a Computer Science Engineer.
 
 This blog is a reflection of my continuous learning journey, where I document useful insights that help not only me but others like you.
 
 ---
 
-<h3>🔧 Topics I Focus On</h3>
+<h3>Topics I Focus On</h3>
 
-- ☕ **Backend Java Development** – Spring Boot, APIs, and Best Practices  
-- 📡 **High-Level Design (HLD)** – Architectural Overviews  
-- 🛠️ **Low-Level Design (LLD)** – Class Structures, Design Patterns, Design Decisions    
-- 🗄️ **Database Design & Optimization** – Databases, Designing, Indexing, Query Optimization  
-- ☁️ **AWS & DevOps** – Cloud deployments, CI/CD, and Infrastructure Insights  
-- 💡 **Code Snippets & Tools** – Tips, Tools and Other Useful Experiences I Gained
+- **Backend Java Development** – Spring Boot, APIs, and Best Practices  
+- **High-Level Design (HLD)** – Architectural Overviews  
+- **Low-Level Design (LLD)** – Class Structures, Design Patterns, Design Decisions    
+- **Database Design & Optimization** – Databases, Designing, Indexing, Query Optimization  
+- **AWS & DevOps** – Cloud deployments, CI/CD, and Infrastructure Insights  
+- **Code Snippets & Tools** – Tips, Tools and Other Useful Experiences I Gained
 
 I write these posts to improve my knowledge and contribute back to the dev community. I hope you find value in what I share.
 
 
 ---
 
-<h3>📬 Feel Free to Connect with Me</h3>
+<h3>Feel Free to Connect with Me</h3>
 
-- 💼 **LinkedIn**: [linkedin.com/in/mashkarharis](https://lk.linkedin.com/in/mashkarharis)
+- **LinkedIn**: [linkedin.com/in/mashkarharis](https://lk.linkedin.com/in/mashkarharis)
 
 ---
 
