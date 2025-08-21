@@ -1,0 +1,37 @@
+{{- if .Page.Site.Params.BookPortableLinks -}}
+  {{- template "portable-link" . -}}
+{{- else -}}
+  {{- $isExternal := or (in .Destination ":") (strings.HasPrefix .Destination "//") }}
+  <a href="{{ .Destination | safeURL }}"
+     {{ with .Title }}title="{{ . }}"{{ end }}
+     {{ if $isExternal }}target="_blank" rel="noopener noreferrer"{{ end }}>
+     {{ .Text | safeHTML }}
+  </a>
+{{- end -}}
+
+{{- define "portable-link" -}}
+  {{- $destination := .Destination }}
+  {{- $isRemote := or (in .Destination ":") (strings.HasPrefix .Destination "//") }}
+  {{- if not $isRemote }}
+    {{- $url := urls.Parse .Destination }}
+    {{- $path := strings.TrimSuffix "/_index.md" $url.Path }}
+    {{- $path = strings.TrimSuffix "/_index" $path }}
+    {{- $path = strings.TrimSuffix ".md" $path }}
+    {{- $page := .Page.GetPage $path }}
+    {{- if $page }}
+      {{- $destination = $page.RelPermalink }}
+      {{- if $url.Fragment }}
+        {{- $destination = print $destination "#" $url.Fragment }}
+      {{- end }}
+    {{- else if fileExists (print .Page.File.Dir .Destination) }}
+      <!-- Local file exists, keep as is -->
+    {{- else -}}
+      {{- warnf "Page '%s' not found in '%s'" .Destination .Page.File }}
+    {{- end }}
+  {{- end }}
+  <a href="{{ $destination | safeURL }}"
+     {{ with .Title }}title="{{ . }}"{{ end }}
+     {{ if $isRemote }}target="_blank" rel="noopener noreferrer"{{ end }}>
+     {{ .Text | safeHTML }}
+  </a>
+{{- end -}}

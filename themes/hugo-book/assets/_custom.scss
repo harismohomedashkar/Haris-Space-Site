@@ -1,0 +1,69 @@
+// Import a clean, readable font (great for blogs)
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 400;
+
+}
+
+.markdown.book-article {
+    p {
+        text-align: justify;
+    }
+
+    img {
+        display: block;
+        margin: 1em auto;
+        max-width: 100%;
+        height: auto;
+
+        border: 1px solid #686868;
+        padding: 4px;
+        border-radius: 4px;
+    }
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+    line-height: 1.2;
+    font-weight: 600;
+    font-variant-caps: petite-caps;
+}
+
+#TableOfContents {
+    a {
+        border-style: solid;
+        color: #000;
+        font-size: 14px;
+        font-variant-caps: all-petite-caps;
+        font-weight: 500;
+        padding: 2px;
+        padding-right: 15px;
+        padding-left: 15px;
+        border-width: thin;
+        border-color: #0056b3;
+        border-radius: 10px;
+
+        &:hover {
+            background-color: #0056b3;
+            color: whitesmoke;
+            text-decoration: none;
+        }
+    }
+
+    li {
+        max-width: fit-content;
+    }
+}
+
+.book-menu{
+    li{
+        text-transform: uppercase;
+    }
+}
