@@ -94,6 +94,11 @@ Here we can see, that no transitive dependencies are remaining. So now it satisf
 
 BCNF is the advanced version of 3NF. In order to become BCNF, the following conditions need to be satisfied.
 
+1. Tables should be in 1 NF ✅
+2. Tables should be in 2 NF ✅
+3. Tables should be in 3 NF ✅
+4. For every functional dependency X->Y, X is the super key of table❓
+
 As discussed so far, the tables are in 3NF. Now, we can decompose the above tables as follows, in such a way that it satisfies the 4th condition,
 
 ![](/images/1_qLh_SEPLl9tPtJYqlhzz-w.png)
