@@ -11,12 +11,12 @@ Basic code will look like this.
 ```java
 @Service
 
-class OrderManagerServcie{
+class OrderManagerService{
 
     void submitOrder(String orderId){
 
-	// User Type Validation Logic -- 10 Lines
-	// Access Mode Validation Logic -- 8 Lines
+	    // User Type Validation Logic -- 10 Lines
+	    // Access Mode Validation Logic -- 8 Lines
         // Log Access Record -- 2 Lines
 
         
@@ -32,8 +32,8 @@ class OrderManagerServcie{
 
     void cancelOrder(String orderId){
 
-	// User Type Validation Logic -- 10 Lines
-	// Access Mode Validation Logic -- 8 Lines
+	    // User Type Validation Logic -- 10 Lines
+	    // Access Mode Validation Logic -- 8 Lines
         // Log Access Record -- 2 Lines
 
         
