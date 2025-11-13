@@ -19,7 +19,7 @@ The main concept behind this pattern is that, without repeating shared propertie
 
 Let's clarify the idea through a simple example. Assume we have to draw 500 trees and 50 rocks on a canvas, which represents an image of a forest, as shown below.
 
-![](/images/forest.png)
+![](/images/forest.PNG)
 
 Each tree and rock in the image represents a separate object in memory. First, let's try to draw this without applying the Flyweight Design Pattern.
 
