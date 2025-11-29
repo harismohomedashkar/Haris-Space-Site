@@ -27,3 +27,7 @@ alt text...
 rounds
 ...
 for sitemap check again
+
+
+- Index Series
+- AWS hands on series
