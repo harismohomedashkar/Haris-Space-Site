@@ -121,7 +121,7 @@ Now, we will be focusing on LinkedList, another list type in Java. For more deta
 
 ### Internal Structure
 
-![](/images/java-ll-1.PNG)                                                      
+![](/images/java-ll-1.png)                                                      
 
 In Java, we initialize a LinkedList as 
 
