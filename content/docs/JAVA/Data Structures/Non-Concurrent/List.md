@@ -13,7 +13,7 @@ First, we will be focusing on ArrayList, the most generally used list type in Ja
 
 ### Internal Structure
 
-![](/images/java-list-1.PNG)                                                      
+![](/images/java-list-1.PNG) 
 
 In Java, we initialize an ArrayList as 
 
