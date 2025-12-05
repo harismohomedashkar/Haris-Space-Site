@@ -13,7 +13,7 @@ First, we will be focusing on ArrayList, the most generally used list type in Ja
 
 ### Internal Structure
 
-![](/images/java-list-1.PNG) 
+![](/images/java-list-1.png) 
 
 In Java, we initialize an ArrayList as 
 
@@ -121,7 +121,7 @@ Now, we will be focusing on LinkedList, another list type in Java. For more deta
 
 ### Internal Structure
 
-![](/images/java-ll-1.png)                                                      
+![](/images/java-ll-1.PNG)                                                      
 
 In Java, we initialize a LinkedList as 
 
