@@ -21,19 +21,19 @@ In Java, we initialize an ArrayList as
 ArrayList<SampleType> arr = new ArrayList<>();
 ```
 
-Once we initialized this, it is backed by a normal Java array internally as
+Once we initialized this, it is backed by a normal Java array internally as,
 
 ```java
-Object[] elementData= ..
+Object[] elementData= ...
 ```
 
-Since this is backed by a normal Java array, ArrayList uses Contiguous Memory Space for storage inside the heap. By default, it starts with a capacity of 10 on first add and grows by 1.5x when space becomes occupied. 
+Since this is backed by a normal Java array, ArrayList uses Contiguous Memory Space for storage inside the heap. By default, it starts with a capacity of 10 on first add and grows by 1.5X when space becomes occupied. 
 
 ```text
-new_capacity = old_capacity + old_capacity>> 1
+new_capacity = old_capacity + old_capacity >> 1
 ```
 
-But if we roughly know the number of elements that will be included in the ArrayList, then we can define an ArrayList with custom capacity, as shown below, which improves efficiency by avoiding unnecessary growth.
+But if we roughly know the number of elements that will be included in the ArrayList, then we can define an ArrayList with custom capacity, as shown below, which improves efficiency by avoiding requirement for unnecessary growth.
 
 ```java
 ArrayList<SampleType> arr = new ArrayList<>(25);
@@ -68,7 +68,7 @@ When we try to insert at the end,
 -  Calculate the end memory location of the array
 -  Check capacity filling
    -   If need growth  => grows by 1.5X => need element copying to new location with more space => **O(n)**
-   -   If no need growth => Just add at end => **O(1)**
+   -   If no growth needed => Just add at end => **O(1)**
 
 In general array list has **O(1)** for adding an element at the end, worst case **O(n)**, when resizing.
 
@@ -95,7 +95,7 @@ So when it comes to inserting in the beginning/middle,
 - Shift all the elements to the right.
 - Insert a new element at the beginning/middle.
 
-So, ArrayList is not a good choice if we have frequent insertions at the beginning / middle.
+This operation also has **O(n)** time complexity. So, ArrayList is not a good choice if we have frequent insertions at the beginning/middle.
 
 ### Remove from Start/Middle
 
@@ -111,8 +111,8 @@ This operation also has **O(n)** time complexity. So ArrayList is not a good cho
 In summary, ArrayList
 
 ```text
-Random Access, Insert/Delete/Update End -> Optimal
-Frequent Insert/Delete/Update Beginning/Middle-> Not Optimal.
+Random Access, Frequent Insert/Delete End -> Optimal ✅
+Frequent Insert/Delete Beginning/Middle -> Not Optimal ❌
 ```
 ---
 ## Linked List
@@ -129,7 +129,7 @@ In Java, we initialize a LinkedList as
 LinkedList<SampleType> arr = new LinkedList<>();
 ```
 
-Once we initialized this, it is backed by a chain of Node Objects, where each node has references for next and previous Nodes in the chain. We simply call this chain as doubly-linked list. Each node holds the value of the stored element.
+Once we initialized this, it is backed by a chain of Node Objects, where each node has references for next and previous Nodes in the chain. And each node holds the value of the stored element. We simply call this chain as doubly-linked list.
 
 ```java
 private static class Node<T>{
@@ -143,13 +143,13 @@ Since this is backed by a set of objects in memory, the structure is scattered a
 
 The reference of the start and end nodes will be stored inside the stack, as shown in the image.
 
-Also, it should be noted that LinkedLists are not thread-safe.
+Also, it should be noted that LinkedLists are also not thread-safe.
 
 ### Random Access 
 
 ![](/images/java-ll-2.PNG)                         
 
-LinkedList uses a chain of node objects scattered across the memory, and initially, we only have the reference to the start and end nodes. Due to this, we have to start from the starting/ending node and traverse through each node to find the node at a given index. This gives a time complexity of O(n).
+LinkedList uses a chain of node objects scattered across the memory, and initially, we only have the reference to the start and end nodes. Due to this, we have to start from the starting/ending node and traverse through each node to find the node at a given index. This gives a time complexity of **O(n)**.
 
 So LinkedList is not optimal if we randomly access element in a larger collection frequently.
 
@@ -158,8 +158,9 @@ So LinkedList is not optimal if we randomly access element in a larger collectio
 ![](/images/java-ll-3.PNG)                          
 ![](/images/java-ll-4.PNG)       
 ![](/images/java-ll-5.PNG)    
-![](/images/java-ll-6.PNG)        
-Since we know the node object references of start and end nodes, we just need to create / remove a node at start / end and update the reference pointer. This operation takes a constant time complexity of O(1) regardless of the array size.
+![](/images/java-ll-6.PNG)  
+
+Since we know the node object references of start and end nodes, we just need to create/remove a node at start/end and update the reference pointer. This operation takes a constant time complexity of **O(1)** regardless of the array size.
 
 ### Insert/Remove from Middle
 
@@ -167,24 +168,24 @@ Since we know the node object references of start and end nodes, we just need to
 ![](/images/java-ll-8.PNG)    
 ![](/images/java-ll-9.PNG)                 
 
-Assume we are inserting / removing an element at a middle index. We have to
+Assume we are inserting/removing an element at a middle index. We have to
 
-- Create a node with an element (time can be negligible)
-- Find Node. Since we only know the node references of start and end, first we have to traverse and find the n-th node, which takes O(n)
-- Update pointer accordingly O(1)
+- Create a node with an element - O(1)
+- Find Node. Since we only know the node references of start and end, first we have to traverse and find the n-th node, which takes - O(n)
+- Update pointer accordingly - O(1)
 
-This gives us O(n) time complexity for insertion and deletion at the middle.
+This gives us **O(n)** time complexity for insertion and deletion at the middle.
 
 In summary, LinkedList
 ```text
-Frequent Insert/Delete/Update Start/End -> Optimal
-Random Access, Insert/Delete/Update Middle -> Not Optimal.
+Frequent Insert/Delete Start/End -> Optimal ✅
+Random Access, Frequent Insert/Delete Middle -> Not Optimal ❌
 ```
 
 ---
 ## Immutable List
 
-If we want a read-only version of the Collection, we can use List.of(), List.copyOf(), Collections.unmodifiableList(...).
+If we want a read-only version of the List Collection, we can use List.of(), List.copyOf(), Collections.unmodifiableList(...).
 
 ---
 > Please note that collections we described here are **not Thread-Safe**.
