@@ -181,6 +181,18 @@ In summary, LinkedList
 Frequent Insert/Delete Start/End -> Optimal ✅
 Random Access, Frequent Insert/Delete Middle -> Not Optimal ❌
 ```
+---
+## Summary
+
+| Use Case             	| ArrayList                                     	| LinkedList                       	|
+|----------------------	|-----------------------------------------------	|----------------------------------	|
+| Internal Structure   	| Contiguous Array in Memory                    	| Doubly Linked Node Chain         	|
+| Memory Usage         	| Low                                           	| High                             	|
+| When to Use          	| Random Access, Frequenct Insert/Delete at End 	| Frequent Insert/Delete Start/End 	|
+| Random Access        	| O(1)                                          	| O(n)                             	|
+| Insert/Delete Start  	| O(n)                                          	| O(1)                             	|
+| Insert/Delete Middle 	| O(n)                                          	| O(n)                             	|
+| Insert/Delete End    	| O(1)                                          	| O(1)                             	|
 
 ---
 ## Immutable List
@@ -189,6 +201,7 @@ If we want a read-only version of the List Collection, we can use List.of(), Lis
 
 ---
 > Please note that collections we described here are **not Thread-Safe**.
+
 
 Thank You !\
 Happy Coding 🙌
