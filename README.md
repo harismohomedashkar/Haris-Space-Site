@@ -1,33 +1,24 @@
-786
+# Haris Space
 
-hugo server --minify --theme hugo-book
+Welcome to **Haris Space** — a technical blog where I share solutions, patterns, and practical knowledge I actively gather through my work as a Computer Science Engineer.
 
----
-# 786
-title: "Java Volatile Keyword Explained"
-date: 2025-09-18
-lastmod: 2025-09-18
-description: "Learn how the volatile keyword works in Java, why it's used in concurrency, and common pitfalls."
-slug: "java-volatile"  
-categories: ["Java"]             
-tags: ["Concurrency", "Multithreading"]  
-author: "Mohomed Ashkar Haris"                                   
-weight: 10                             
-pinned: false
----
+This blog is a reflection of my continuous learning journey, where I document useful insights that help not only me but others in the developer community.
 
-recent - latest
-pinned - recommendted for you
-random - reading list
+## Topics I Focus On
 
-slug
-title
-alt text...
-...
-rounds
-...
-for sitemap check again
+- **Backend Java Development** – Spring Boot, APIs, and best practices
+- **High-Level Design (HLD)** – Architectural overviews and system design
+- **Low-Level Design (LLD)** – Class structures, design patterns, and design decisions
+- **Database Design & Optimization** – Database design, indexing, and query optimization
+- **AWS & DevOps** – Cloud deployments, CI/CD, and infrastructure insights
+- **Code Snippets & Tools** – Tips, tools, and useful experiences from my development journey
 
+I write these posts to improve my knowledge and contribute back to the developer community. I hope you find them useful.
 
-- Index Series
-- AWS hands on series
+## Connect With Me
+
+- **LinkedIn:** [linkedin.com/in/mashkarharis](https://lk.linkedin.com/in/mashkarharis)
+
+> *Learning by sharing, growing by solving.*
+
+Thanks for visiting! 🚀
